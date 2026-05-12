@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="48dp">
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_category_icon">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="🛒"
+                android:textSize="64sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="GroceryX"
+            android:textColor="@color/primary"
+            android:textSize="36sp"
+            android:letterSpacing="-0.02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Groceries in 10 minutes"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.01" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Let's get started"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Enter your mobile number to log in"
+            android:textColor="@color/text_hint"
+            android:textSize="14sp" />
+
+        <!-- Mobile Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary"
+            app:startIconDrawable="@android:drawable/sym_action_call"
+            app:startIconTint="@color/text_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSendOtp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/primary"
+            app:rippleColor="@color/ripple_light" />
+
+        <!-- OTP Section -->
+        <LinearLayout
+            android:id="@+id/otpSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="32dp"
+                android:background="@drawable/bg_dashed_line"
+                android:layerType="software" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify OTP"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxStrokeColor="@color/success_green"
+                app:hintTextColor="@color/success_green">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="4-digit code"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:letterSpacing="0.5"
+                    android:fontFamily="sans-serif-medium" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVerifyOtp"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:text="Verify Code"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/success_green"
+                app:rippleColor="#4D10B981" />
+
+            <TextView
+                android:id="@+id/tvResendOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="Didn't get the code? Resend"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

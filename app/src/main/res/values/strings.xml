@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GroceryX</string>
+    <string name="login">Login</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="order_success">Order Success</string>
+</resources>

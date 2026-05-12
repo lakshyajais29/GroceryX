@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Brand Colors -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#1E88E5</color>
+    <color name="primary_surface">#E3F2FD</color>
+    <color name="accent">#FFC107</color>
+
+    <color name="success_green">#10B981</color>
+    <color name="success_light">#D1FAE5</color>
+    <color name="error_red">#EF4444</color>
+    <color name="warning_orange">#F59E0B</color>
+
+    <color name="background">#F9FAFB</color> <!-- Ultra light grey -->
+    <color name="card_white">#FFFFFF</color>
+    
+    <color name="text_primary">#111827</color> <!-- Premium Near Black -->
+    <color name="text_secondary">#4B5563</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="divider">#E5E7EB</color>
+
+    <color name="search_bg">#FFFFFF</color>
+    <color name="badge_red">#EF4444</color>
+    <color name="ripple_light">#1A1565C0</color>
+    
+    <color name="add_button_bg">#F8FAFC</color>
+    <color name="add_button_text">#1565C0</color>
+
+    <color name="banner_blue_start">#1565C0</color>
+    <color name="banner_blue_end">#2563EB</color>
+</resources>
